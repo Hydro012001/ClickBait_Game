@@ -78,6 +78,13 @@ export default function ClickScreen() {
     setStartClick(!startClick);
     setHandleCount(true);
   };
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (!user) {
+        navigate("error");
+      }
+    });
+  });
   return (
     <div className="contianer">
       {timesUp ? (

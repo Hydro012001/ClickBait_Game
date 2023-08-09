@@ -24,7 +24,7 @@ export default function Dashboard() {
         navigate("error");
       }
     });
-  });
+  }, []);
   return (
     <div>
       <ul>
