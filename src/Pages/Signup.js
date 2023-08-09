@@ -16,7 +16,7 @@ export default function Signup() {
           updateProfile(user, {
             displayName: name,
           });
-          navigate("/");
+          navigate("ClickBait_Game/login");
         } else {
           alert("Error found");
         }
@@ -27,7 +27,7 @@ export default function Signup() {
   };
 
   const handleRedirectToLogin = () => {
-    navigate("/");
+    navigate("ClickBait_Game/login");
   };
   return (
     <div>
