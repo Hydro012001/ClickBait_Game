@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/ClickBait_Game/static/css/main.88c4bb52.css",
-    "main.js": "/ClickBait_Game/static/js/main.1a5557ae.js",
+    "main.js": "/ClickBait_Game/static/js/main.a432f82f.js",
     "static/js/787.425351f7.chunk.js": "/ClickBait_Game/static/js/787.425351f7.chunk.js",
     "static/media/confitte.gif": "/ClickBait_Game/static/media/confitte.1f51f485e4e93cb7e909.gif",
     "static/media/mouse.gif": "/ClickBait_Game/static/media/mouse.2c9bc2087ae6487c2e6b.gif",
     "static/media/Woman thinking.gif": "/ClickBait_Game/static/media/Woman thinking.e3cb13cc75c53d8eec04.gif",
     "index.html": "/ClickBait_Game/index.html",
     "main.88c4bb52.css.map": "/ClickBait_Game/static/css/main.88c4bb52.css.map",
-    "main.1a5557ae.js.map": "/ClickBait_Game/static/js/main.1a5557ae.js.map",
+    "main.a432f82f.js.map": "/ClickBait_Game/static/js/main.a432f82f.js.map",
     "787.425351f7.chunk.js.map": "/ClickBait_Game/static/js/787.425351f7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.88c4bb52.css",
-    "static/js/main.1a5557ae.js"
+    "static/js/main.a432f82f.js"
   ]
 }
