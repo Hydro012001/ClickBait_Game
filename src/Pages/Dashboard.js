@@ -11,7 +11,7 @@ export default function Dashboard() {
     auth
       .signOut()
       .then(() => {
-        navigate("/ClickBait_Game/login");
+        navigate("/ClickBait_Game");
       })
       .catch((error) => {
         alert(error);
@@ -21,7 +21,7 @@ export default function Dashboard() {
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (!user) {
-        navigate("ClickBait_Game/error");
+        navigate("/ClickBait_Game/error");
       }
     });
   });

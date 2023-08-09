@@ -11,10 +11,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="ClickBait_Game/login" exact element={<Login />} />
-        <Route path="ClickBait_Game/error" exact element={<NotAllowed />} />
-        <Route path="ClickBait_Game/signup" exact element={<Signup />} />
-        <Route path="ClickBait_Game/dashboard" exact element={<Dashboard />}>
+        <Route path="/ClickBait_Game" exact element={<Login />} />
+        <Route path="/ClickBait_Game/error" exact element={<NotAllowed />} />
+        <Route path="/ClickBait_Game/signup" exact element={<Signup />} />
+        <Route path="/ClickBait_Game/dashboard" exact element={<Dashboard />}>
           <Route index exact element={<Level />} />
           <Route path=":level" exact element={<ClickScreen />} />
         </Route>
