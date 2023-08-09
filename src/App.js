@@ -1,6 +1,6 @@
 import "./App.css";
 import ClickScreen from "./Components/clickscreen";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Login from "./Pages/Login";
 import Dashboard from "./Pages/Dashboard";
 import Signup from "./Pages/Signup";
@@ -9,7 +9,7 @@ import NotAllowed from "./Components/notAllowed";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/ClickBait_Game" exact element={<Login />} />
         <Route path="/ClickBait_Game/error" exact element={<NotAllowed />} />
@@ -22,7 +22,7 @@ function App() {
           />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
