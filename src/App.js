@@ -15,8 +15,11 @@ function App() {
         <Route path="/ClickBait_Game/error" exact element={<NotAllowed />} />
         <Route path="/ClickBait_Game/signup" exact element={<Signup />} />
         <Route path="/ClickBait_Game/dashboard" exact element={<Dashboard />}>
-          <Route index exact element={<Level />} />
-          <Route path=":level" exact element={<ClickScreen />} />
+          <Route index element={<Level />} />
+          <Route
+            path="/ClickBait_Game/dashboard/:level"
+            element={<ClickScreen />}
+          />
         </Route>
       </Routes>
     </BrowserRouter>
