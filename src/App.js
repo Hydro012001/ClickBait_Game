@@ -12,9 +12,9 @@ function App() {
     <HashRouter>
       <Routes>
         <Route path="/" exact element={<Login />} />
-        <Route path="error" exact element={<NotAllowed />} />
-        <Route path="signup" exact element={<Signup />} />
-        <Route path="dashboard" exact element={<Dashboard />}>
+        <Route path="/error" exact element={<NotAllowed />} />
+        <Route path="/signup" exact element={<Signup />} />
+        <Route path="/dashboard" exact element={<Dashboard />}>
           <Route index element={<Level />} />
           <Route path=":level" element={<ClickScreen />} />
         </Route>
