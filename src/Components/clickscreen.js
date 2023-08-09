@@ -5,8 +5,11 @@ import confitte from "../Pictures/confitte.gif";
 import { useParams } from "react-router-dom";
 import { doc, setDoc } from "firebase/firestore";
 import { auth, db } from "../Services/firebaseConfig";
+import { onAuthStateChanged } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 import Rank from "./rank";
 export default function ClickScreen() {
+  const navigate = useNavigate();
   const [count, setCount] = useState(0);
   const [timer, setTimer] = useState(20);
   const [btnDisable, setbtnDisable] = useState(false);
