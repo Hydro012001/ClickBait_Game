@@ -21,10 +21,10 @@ export default function Dashboard() {
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (!user) {
-        navigate("error");
+        navigate("/error");
       }
     });
-  }, []);
+  }, [navigate]);
   return (
     <div>
       <ul>

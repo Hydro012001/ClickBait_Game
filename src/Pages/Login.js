@@ -8,14 +8,14 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPass] = useState("");
   const handleRedirectTOSigup = () => {
-    navigate("signup");
+    navigate("/signup");
   };
 
   const handleLogin = () => {
     signInWithEmailAndPassword(auth, email, password)
       .then((res) => {
         if (res.user) {
-          navigate("dashboard");
+          navigate("/dashboard");
         } else {
           navigate("/");
         }
