@@ -8,16 +8,16 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPass] = useState("");
   const handleRedirectTOSigup = () => {
-    navigate("/ClickBait_Game/signup");
+    navigate("signup");
   };
 
   const handleLogin = () => {
     signInWithEmailAndPassword(auth, email, password)
       .then((res) => {
         if (res.user) {
-          navigate("/ClickBait_Game/dashboard");
+          navigate("dashboard");
         } else {
-          navigate("/ClickBait_Game");
+          navigate("/");
         }
       })
       .catch((error) => {
@@ -28,9 +28,9 @@ export default function Login() {
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
-        navigate("/ClickBait_Game/dashboard");
+        navigate("dashboard");
       } else {
-        navigate("/ClickBait_Game");
+        navigate("/");
       }
     });
   }, [navigate]);

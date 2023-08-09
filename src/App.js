@@ -11,15 +11,12 @@ function App() {
   return (
     <HashRouter>
       <Routes>
-        <Route path="/ClickBait_Game" exact element={<Login />} />
-        <Route path="/ClickBait_Game/error" exact element={<NotAllowed />} />
-        <Route path="/ClickBait_Game/signup" exact element={<Signup />} />
-        <Route path="/ClickBait_Game/dashboard" exact element={<Dashboard />}>
+        <Route path="/" exact element={<Login />} />
+        <Route path="error" exact element={<NotAllowed />} />
+        <Route path="signup" exact element={<Signup />} />
+        <Route path="dashboard" exact element={<Dashboard />}>
           <Route index element={<Level />} />
-          <Route
-            path="/ClickBait_Game/dashboard/:level"
-            element={<ClickScreen />}
-          />
+          <Route path=":level" element={<ClickScreen />} />
         </Route>
       </Routes>
     </HashRouter>

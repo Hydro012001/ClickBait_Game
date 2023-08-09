@@ -3,7 +3,7 @@ import "../CSS/click.css";
 export default function NotAllowed() {
   const navigate = useNavigate();
   const redirectLogin = () => {
-    navigate("/ClickBait_Game");
+    navigate("/");
   };
   return (
     <div className="not-Allowed">
